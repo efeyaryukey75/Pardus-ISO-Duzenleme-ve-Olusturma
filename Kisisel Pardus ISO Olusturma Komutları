@@ -94,9 +94,9 @@ sudo rm md5sum.txt
 find -type f -print0 | sudo xargs -0 md5sum | grep -v isolinux/boot.cat | sudo tee md5sum.txt
 
 
-## isolinux kullanarak gpt ve mbr disklerinde kurulumunu yapabileceğiniz Uefi ve Legacy destekli imajınızı aşağıdaki komutla oluşturalım. Aşağıdaki komut, parametreleriyle birlikte tek bir komuttur.
+## isolinux kullanarak gpt ve mbr disklerinde kurulumunu yapabileceğiniz Uefi ve Legacy destekli imajınızı aşağıdaki komutla oluşturalım. Aşağıdaki komut, parametreleriyle birlikte tek bir komuttur. Aşağıdaki komutu iso olarak çıkaracağımız dizinin bir üst dizininde çalıştırmamız gerekir.
 
-xorriso -as mkisofs -isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -eltorito-alt-boot  -e boot/grub/efi.img -no-emul-boot -isohybrid-gpt-basdat -isohybrid-apm-hfsplus -o "Yeni_Imjınızın_Adı.iso"  /home/kullanıcı_adı/canlı
+xorriso -as mkisofs -isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -eltorito-alt-boot  -e boot/grub/efi.img -no-emul-boot -isohybrid-gpt-basdat -isohybrid-apm-hfsplus -o "Yeni_Imjınızın_Adı.iso"  ~/canlı
 
 
 ## Oluşturduğunuz imajımızı dd komutuyla usb belleğe de yazdırabilirsiniz
