@@ -27,7 +27,7 @@ sudo rsync --exclude=/live/filesystem.squashfs -a /mnt/pardus/ ~/canlı
 
 ## filesystem.squashfs'yi sistem dizini oluşturarak oraya açalım;
 
-sudo unsquashfs -d ~/sistem /mnt/pardus/live/filesystem.squashfs-o loop Pardus-19.2-XFCE-amd64.iso /mnt/pardus
+sudo unsquashfs -d ~/sistem /mnt/pardus/live/filesystem.squashfs
 
 ## chroot ile sistemde değişiklik yaparken internet bağlantısı için gerekli dosyaları kopyalayalım;
 
