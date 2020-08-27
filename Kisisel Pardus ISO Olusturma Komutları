@@ -1,8 +1,8 @@
 ﻿    #### Kişiselleştirilmiş Pardus İmajı Oluşturma ####
 
-## Resmi Pardus imajları kullanarak kişiselleştirilmiş imaj oluşturmak için gerekli paketler; squashfs-tools rsync genisoimage xorriso.
+## Resmi Pardus imajları kullanarak kişiselleştirilmiş imaj oluşturmak için gerekli paketler; squashfs-tools rsync genisoimage xorriso isolinux
 
-## İşlemler Debain 10 (Buster) tabanlı Pardus 19.2 işletim sisteminde uygulanmıştır.
+## İşlemler Debain 10 (Buster) tabanlı Pardus 19.3 işletim sisteminde uygulanmıştır.
 
 ## Aşağıdaki komutları uygulamadan önce Debian tabanlı işletim sistemlerine biraz aşina olmak gerekir.
 
@@ -11,7 +11,7 @@
 
 sudo apt update
 sudo apt upgrade
-sudo apt install squashfs-tools genisoimage xorriso rsync
+sudo apt install squashfs-tools genisoimage xorriso rsync isolinux
 
 ## Pardus resmi imajınını indirin, ev dizininin altında kalıp adında bir klasör oluşturun ve oraya Pardus isosunu taşıyalım
 
@@ -101,7 +101,7 @@ xorriso -as mkisofs -isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -b isolinux/is
 
 ## Oluşturduğunuz imajımızı dd komutuyla usb belleğe de yazdırabilirsiniz
 
-sudo dd if=yazılacak.iso of=/dev/sda status="progress"
+sudo dd if=Yeni_Imjınızın_Adı.iso of=/dev/sda status="progress"
 
 #### Kaynaklar;
 
