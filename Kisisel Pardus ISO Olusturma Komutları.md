@@ -61,7 +61,7 @@ export HOME=/root
 export LC_ALL=C
 ```
 
-## Artık bu aşamada Pardus imajında açık bir sistem gibi çalışabilirsiniz. Yaptığınız değişiklikler sistem adında oluşturduğumuz dizininde kaydedilecektir. Daha sonra filesystem.squashfs'yi sistem dizinine açma işleminin tam tersini yaparak kişiselleştirilmiş isonun dosya sistemini oluşturmuş olacağız. Bu aşamada yeni paketler kurabilir, kurulu paketleri görüntüleyebilir, paketleri kaldırabilir veya kurulu paketlerde konfigürasyonlar yapabilirsiniz. Örneğin kişiselleştirilmiş isonuzun içinde neofetch paketi kurulu gelsin istiyorsanız sudo apt updae komutuyla depoyu güncelleyip sudo apt install neofetch komutunu uygulayabilirsiniz. 
+## Artık bu aşamada Pardus imajında açık bir sistem gibi çalışabilirsiniz. Yaptığınız değişiklikler sistem adında oluşturduğumuz dizininde kaydedilecektir. Daha sonra filesystem.squashfs'yi sistem dizinine açma işleminin tam tersini yaparak kişiselleştirilmiş isonun dosya sistemini oluşturmuş olacağız. Bu aşamada yeni paketler kurabilir, kurulu paketleri görüntüleyebilir, paketleri kaldırabilir veya kurulu paketlerde konfigürasyonlar yapabilirsiniz. Örneğin kişiselleştirilmiş isonuzun içinde neofetch paketi kurulu gelsin istiyorsanız *sudo apt updae* komutuyla depoyu güncelleyip *sudo apt install neofetch* komutunu uygulayabilirsiniz. 
 
 
 
